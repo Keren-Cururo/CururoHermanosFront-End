@@ -1,0 +1,256 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: 
+        url(/images/pexel1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        min-height: 90vh;
+    
+        display: flex;
+        align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #DAA520;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color: #8a8326;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+
+}
+
+.header-content h1{
+    font-size: 78px;
+    line-height: 80px;
+    color: #DAA520;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.header-content p {
+    font-size: 30px;
+    color: #f7e6e6;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.banner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 95px;
+   
+  
+}
+.banner img {
+   width: 47%;
+   height: auto;
+}
+.banner-text {
+   width: 50%;
+   padding-left: 20px;
+}
+.banner-text h1 {
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+.banner-text p {
+   font-size: 19px;
+   line-height: 1.5;
+   margin:px;
+}
+
+
+h2 {
+   font-size: 35px;
+   line-height: 70px;
+   color: #DAA520;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+p{
+   color: #eeebeb;
+   font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        padding: 50px 0 0; /* Eliminé espacio extra abajo */
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1100px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .footer-section h2 {
+        color: #fafafa;
+        font-size: 20px;
+        border-bottom: 2px solid #DAA520;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .footer-section p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #000000;
+        color: #ffffff;
+        transition: 0.3s;
+        border-radius: 5px; /* Cuadrado en lugar de redondo */
+    }
+    
+    .social-icons a:hover {
+        background-color: #DAA520;
+        color: #fff;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espacio entre los iconos */
+    }
+    
+    .contact-info div {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Espacio entre el icono y el texto */
+    }
+    
+    .contact-info i {
+        font-size: 18px;
+        color: #DAA520;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin: 10px 0;
+    }
+    
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .footer-section ul li a:hover {
+        color: #DAA520;
+    }
+    
+    /* Footer Bottom - Separado del resto */
+    .footer-bottom {
+        text-align: center;
+        background-color: #000000;
+        padding: 15px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
