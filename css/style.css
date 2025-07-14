@@ -438,3 +438,148 @@ iframe {
         font-size: 14px;
         margin-top: 30px;
     }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu label {
+    display: block;
+    padding: 20px;
+  }
+
+  .menu .navbar {
+    display: none;
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .menu-icono {
+    cursor: pointer;
+    width: 25px;
+    filter: invert(1);
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .header-content p,
+  .txt-p,
+  .general-1 {
+    padding: 0 20px !important;
+    text-align: center;
+  }
+
+  .coffee-group,
+  .services-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-1,
+  .services-1,
+  .sucursal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-1 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .services-content h2,
+  .coffee-content h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .general {
+    flex-direction: column;
+  }
+
+  .general-1,
+  .general-2,
+  .general-3 {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+}
+
+/* ----- Hamburguesa básica ----- */
+.hamburguesa {
+  display: none;          /* solo visible en móvil */
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburguesa span {
+  width: 30px;
+  height: 3px;
+  background:#DAA520;
+  transition: 0.3s;
+}
+
+/* ----- Responsive: mostrar hamburguesa y ocultar nav ----- */
+@media screen and (max-width: 768px) {
+
+  /* muestra el ícono */
+  .hamburguesa { display: flex; }
+
+  /* oculta nav por defecto */
+  .navbar { display: none; width:100%; background:#000; }
+
+  /* cuando el checkbox está checked, muestra nav */
+  #menu:checked ~ .navbar { display:block; }
+
+  /* nav vertical */
+  .navbar ul          { flex-direction: column; width:100%; }
+  .navbar ul li       { width:100%; border-bottom:1px solid #444; }
+  .navbar ul li a     { display:block; padding:15px; color:#DAA520; }
+}
